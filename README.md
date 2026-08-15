@@ -227,4 +227,6 @@ literal percent sign. Normal flags, widths, and precisions are supported.
 
 Kerning is disabled in the default `TextStyle` because some system fonts contain unusually aggressive UI kerning pairs. Set `widget.TextStyle.Kerning = true` when typographic kerning is desired; measurement and rendering remain synchronized either way.
 
+Text borders are optional and disabled by default. Set `TextStyle.BorderWidth` to a positive value, then customize `BorderColor`, `BorderCap`, and `BorderJoin` as needed. Borders are drawn before the text fill so the fill remains crisp.
+
 `Row` and `Column` containers support padding, gaps, cross-axis alignment, primary-axis justification, fixed-size items, and grow weights. Tracked containers are reapplied before each draw; calling `SetBounds` also lays them out immediately for resize handling.

@@ -666,6 +666,13 @@ func drawText(ctx *gctx2d.Context, text string, x, y float32, style TextStyle) {
 	ctx.SetTextAlign(style.Align)
 	ctx.SetTextBaseline(style.Baseline)
 	ctx.SetTextKerning(style.Kerning)
+	if style.BorderWidth > 0 {
+		ctx.SetStrokeStyle(style.BorderColor)
+		ctx.SetLineWidth(style.BorderWidth)
+		ctx.SetLineCap(style.BorderCap)
+		ctx.SetLineJoin(style.BorderJoin)
+		ctx.StrokeText(text, x, y)
+	}
 	ctx.FillText(text, x, y)
 }
 

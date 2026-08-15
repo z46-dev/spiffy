@@ -82,15 +82,19 @@ type (
 		Click                                                   ClickAnimationStyle
 	}
 
-	// TextStyle controls font and color styling.
+	// TextStyle controls font, fill, and optional border styling.
 	TextStyle struct {
-		Color    gctx2d.Color
-		Font     *gctx2d.FontHandle
-		FontSize float64
-		Weight   gctx2d.FontWeight
-		Align    gctx2d.TextAlign
-		Baseline gctx2d.TextBaseline
-		Kerning  bool
+		Color       gctx2d.Color
+		BorderColor gctx2d.Color
+		Font        *gctx2d.FontHandle
+		FontSize    float64
+		BorderWidth float32
+		Weight      gctx2d.FontWeight
+		Align       gctx2d.TextAlign
+		Baseline    gctx2d.TextBaseline
+		BorderCap   gctx2d.LineCap
+		BorderJoin  gctx2d.LineJoin
+		Kerning     bool
 	}
 
 	// Element holds the state shared by every interactive element.

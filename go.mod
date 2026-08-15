@@ -4,7 +4,7 @@ go 1.26.2
 
 require (
 	github.com/gogpu/gpucontext v0.27.0
-	github.com/z46-dev/gctx2d v0.0.0-20260811002852-477d98641e8a
+	github.com/z46-dev/gctx2d v0.0.0-20260814154919-7d8b916ee500
 )
 
 require (
