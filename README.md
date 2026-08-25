@@ -1,3 +1,6 @@
+![Tests](https://img.shields.io/github/actions/workflow/status/z46-dev/spiffy/ci.yml?branch=main&event=push&label=CI)
+![Made with Golang](https://img.shields.io/badge/-Made_with_Golang-007d9c?logo=go&logoColor=white)
+
 # spiffy
 
 `spiffy` is a small retained-mode UI layer for `gctx2d` and GoGPU. Build each UI once, update its retained widgets when state changes, and call `Draw` wherever that UI belongs in a scene.

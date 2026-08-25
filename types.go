@@ -447,7 +447,7 @@ func DefaultCheckboxStyles() (unchecked, checked, indeterminate Style) {
 		PressMixAmount:    0.2,
 		DisabledMixAmount: 0.45,
 	}
-	
+
 	checked = unchecked
 	checked.FillColor = gctx2d.ColorBlue
 	checked.BorderColor = gctx2d.ColorBlue

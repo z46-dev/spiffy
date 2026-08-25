@@ -898,8 +898,8 @@ func BenchmarkStableContainerLayout(b *testing.B) {
 	}
 
 	b.ReportAllocs()
-	b.ResetTimer()
-	for range b.N {
+
+	for b.Loop() {
 		row.Layout()
 	}
 }
